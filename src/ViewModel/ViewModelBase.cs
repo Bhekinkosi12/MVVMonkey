@@ -12,14 +12,14 @@ namespace MVVMonkey.Core.ViewModel
         public string Title
         {
             get { return _title; }
-            set { SetProperty(ref _title, value); }
+            set { SetProperty(out _title, value); }
         }
 
         private bool _isBusy;
         public bool IsBusy
         {
             get { return _isBusy; }
-            set { SetProperty(ref _isBusy, value); }
+            set { SetProperty(out _isBusy, value); }
         }
 
         public ViewModelBase(string title = "")
